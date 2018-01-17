@@ -220,8 +220,9 @@ public class RNFetchBlobFS {
              } else {
                  res.put("SDCardApplicationDir", Environment.getExternalStorageDirectory().getAbsolutePath());
             }
-            res.put("MainBundleDir", ctx.getApplicationInfo().dataDir);
-            return res;
+        }
+        res.put("MainBundleDir", ctx.getApplicationInfo().dataDir);
+        return res;
     }
 
     /**
